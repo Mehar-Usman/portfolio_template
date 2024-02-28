@@ -28,7 +28,9 @@
         </div>
         <div class="block lg:flex items-end">
             <article class="p-6 bg-white rounded">
-                <img src="../assets/profile.png" alt="">
+                <div class="bg-orange-500 p-[1px] h-16 w-16 flex items-center justify-center rounded-full">
+                    <img class=" rounded-full" src="../assets/featuresIcon.png" alt="">
+                </div>
                 <h2 class="mt-5">professional</h2>
                 <p class="text-sm mt-5 font-light">Full service range including technical skills, design.</p>
             </article>

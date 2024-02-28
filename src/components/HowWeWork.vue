@@ -3,7 +3,7 @@
       <div>
         <article>
           <p class="text-orange-500 text-2xl uppercase">how we work</p>
-          <h1 class="md:text-3xl lg:text-5xl w-full lg:w-3/4 font-900 text-gray-900 mt-5">Making Your Projects Look Awesome</h1>
+          <h1 class="text-3xl lg:text-5xl w-full lg:w-3/4 font-900 text-gray-900 mt-5">Making Your Projects Look Awesome</h1>
           <p class="my-5 font-semibold text-gray-900">Provides a full service range</p>
           <p class="w-full text-justify lg:w-3/4">Technical skills, design, business understanding, ability to put themselves in the merchant's shoes.</p>
           <button class="mt-5 text-black bg-white uppercase px-6 py-2 border-2 border-gray-500 rounded transition-all ease-in-out font-semibold hover:border-white hover:scale-110 duration-500 hover:bg-gray-900 hover:text-white">Read More</button>
