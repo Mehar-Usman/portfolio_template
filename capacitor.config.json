@@ -1,0 +1,8 @@
+{
+  "appId": "portfolio.template",
+  "appName": "portfolio-template",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  }
+}
