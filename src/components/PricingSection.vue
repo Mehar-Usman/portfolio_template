@@ -16,7 +16,7 @@
           <footer :class="footerClasses(index)">
             <div v-for="(item, iconIndex) in ['itemOne', 'itemTwo', 'itemThree']" :key="item" class="flex gap-4 mt-3">
               <div :class="iconClasses(index, iconIndex)">
-                <img :src="card[item + 'Icon']" alt="icon">
+                <Icon :icon="card[item + 'Icon']" width="24" height="24"/>
               </div>
               <div><p>{{ card[item] }}</p></div>
             </div>
@@ -33,12 +33,13 @@
 </template>
 
 <script setup>
+import { Icon } from '@iconify/vue';
 import { reactive } from 'vue';
 
 const cards = reactive([
-  { courseTitle: 'Consultation', cost: 'Free', description: 'Your digital marketing efforts, instead of handling in-house.', itemOneIcon: 'src/assets/plus.svg', itemOne: 'Brand Design', itemTwoIcon: 'src/assets/minus.svg', itemTwo: 'Market Analysis', itemThreeIcon: 'src/assets/minus.svg', itemThree: 'Production' },
-  { courseTitle: 'Design', cost: '$1500', description: 'Provide your business with a variety of digital solutions to promote.', itemOneIcon: 'src/assets/plus.svg', itemOne: 'Brand Design', itemTwoIcon: 'src/assets/minus.svg', itemTwo: 'Market Analysis', itemThreeIcon: 'src/assets/minus.svg', itemThree: 'Production' },
-  { courseTitle: 'Design+Code', cost: '$3000', description: 'Help you hit your marketing goals and grow your business.', itemOneIcon: 'src/assets/plus.svg', itemOne: 'Brand Design', itemTwoIcon: 'src/assets/minus.svg', itemTwo: 'Market Analysis', itemThreeIcon: 'src/assets/minus.svg', itemThree: 'Production' },
+  { courseTitle: 'Consultation', cost: 'Free', description: 'Your digital marketing efforts, instead of handling in-house.', itemOneIcon: 'mdi:plus', itemOne: 'Brand Design', itemTwoIcon: 'mdi:minus', itemTwo: 'Market Analysis', itemThreeIcon: 'mdi:minus', itemThree: 'Production' },
+  { courseTitle: 'Design', cost: '$1500', description: 'Provide your business with a variety of digital solutions to promote.', itemOneIcon: 'mdi:plus', itemOne: 'Brand Design', itemTwoIcon: 'mdi:minus', itemTwo: 'Market Analysis', itemThreeIcon: 'mdi:minus', itemThree: 'Production' },
+  { courseTitle: 'Design+Code', cost: '$3000', description: 'Help you hit your marketing goals and grow your business.', itemOneIcon: 'mdi:plus', itemOne: 'Brand Design', itemTwoIcon: 'mdi:minus', itemTwo: 'Market Analysis', itemThreeIcon: 'mdi:minus', itemThree: 'Production' },
 ]);
 
 const cardClasses = (index) => [
